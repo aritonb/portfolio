@@ -38,6 +38,10 @@ body
     animation: slideRight 1s ease forwards;
 
 }
+.header a:hover{
+    color: #0ef;
+    cursor: pointer;
+}
 .navbar a {
     display: inline-block;
     font-size: 25px;
@@ -123,28 +127,7 @@ body
     box-shadow: 0 0 2opx #0ef;
 
 }
-.btn-box {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #0ef;
-    border-radius: 40px;
-    font-size: 16px;
-    color: #018b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef
 
-}
-.btn-box:hover {
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 20px cyan
-}
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -153,11 +136,10 @@ body
     
 }
 .about-img img {
-    padding-bottom: 20%;
-    max-width: 630px;
-    height: auto;
+    max-width: 550px;
+    height:fit-content;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 .about-text h2 {
     font-size: 60px;
@@ -168,10 +150,10 @@ body
 }
 .about-text p {
     color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-    
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .services {
     color: aliceblue;
@@ -190,14 +172,14 @@ body
     color: #0ef;
 }
 .container {
-    padding: 90px;
+    padding: 50px;
 
 }
 .services-list {
-    display: grid;
+    display:flex;
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-gap: 20px;
+    
 
 }
 .services-list div {
@@ -213,13 +195,15 @@ body
 
 }
 .services-list div i {
-    font-size: 50px;
+    font-size: 75px;
     margin-bottom: 30px;
+    
 }
 .services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 .services-list div a {
     text-decoration: none;
@@ -227,29 +211,8 @@ body
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+}
 
-}
-.read {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #0ef;
-    border-radius: 40px;
-    font-size: 16px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
-}
-.read:hover {
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 20px cyan;
-}
 .services-list div:hover {
     transform: translateY(-10px);
 
@@ -260,24 +223,23 @@ section {
 }
 .container1 {
     width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
+    height: 600px;
+    padding: 85px 80px;
+    margin-left: 20px;
 
 }
 .heading1 {
     text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
 .bar {
     font-size: 23px;
-
+    display:flex;
 }
 .Technical-bars .bar {
     margin-top: 40px 0;
+    padding: 16px;
+    margin-left: 35px;
 } 
 .Technical-bars .bar:first-child {
     margin-top: 0;
@@ -398,8 +360,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
-    width: 120px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
 
 }
 .radial-bars .radial-bar .progress-bar {
@@ -431,22 +393,22 @@ section {
 
 @keyframes animate-path1 {
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 100;
     }
 }
 @keyframes animate-path2 {
     100%{
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 65;
     }
 }
 @keyframes animate-path3 {
     100%{
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 155;
     }
 }
 @keyframes animate-path4 {
     100%{
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 35;
     }
 }
 .radial-bar .percentage {
@@ -487,10 +449,7 @@ section {
     color: #0ef;
 
 }
-.portfolio-content {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
-}
+
 .row {
     position: relative;
     overflow: hidden;
@@ -562,9 +521,9 @@ section {
     margin-top: 130px;
 }
 .contact-text h2 {
-    font-size: 90px;
+    font-size: 80px;
     line-height: 1;
-    text-align: center;
+    text-align: left;
 }
 .contact-text h2 span {
     color: #0ef;
@@ -572,7 +531,7 @@ section {
 .contact-text h4 {
     margin: 15px 0;
     color: rgb(228, 228, 228);
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 600;
 }
 .contact-text p {
@@ -629,13 +588,16 @@ section {
 .contact-form form {
     position: relative;
 }
+::placeholder {
+    color: black;
+}
 .contact-form form input,form textarea {
     border: none;
     outline: none;
     width: 90%;
     padding: 18px;
-    background: #555557;
-    color: #000;
+    background: #0ef;
+    color: black;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -644,6 +606,7 @@ section {
 .contact-form textarea {
     resize: none;
     height: 220px;
+    color: black;
 }
 .contact-form form .send {
     display: inline-block;
@@ -651,7 +614,7 @@ section {
     background: #0ef;
     border-radius: 40px;
     font-size: 18px;
-    color: #081b29;
+    color: black;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -670,9 +633,11 @@ section {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: rgb(7, 85, 91);
+    background: #0ef;
     font-weight: 300;
     margin-top: 70px;
+    color: black;
+    font-family:sans-serif;
 }
 .top {
     position: fixed;
@@ -680,10 +645,10 @@ section {
     right: 2.1rem;
 }
 .top i {
-    color: #000;
-    background: #0ef;
+    color: #0ef;
+    background: rgb(0, 0, 0);
     font-size: 20px;
-    padding: 10px;
+    padding: 7px;
     border-radius: 0.5rem;
 }
 
